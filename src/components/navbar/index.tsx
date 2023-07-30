@@ -4,7 +4,12 @@ import { navigationsLinksData } from "../../assets/staticData";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between bg-slate-700 text-white md:px-[8%] px-3 md:py-0 py-3">
+    <nav 
+      className="
+        flex items-center justify-between bg-rose-600 text-white md:px-[8%] px-3 md:py-0 py-3
+        w-full sticky left-0 top-0 z-40
+      "
+    >
       <div className="text-3xl">
         Sudo
       </div>

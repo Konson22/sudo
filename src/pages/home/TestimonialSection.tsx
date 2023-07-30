@@ -4,9 +4,9 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 export default function TestimonialSection() {
   return (
     <div className="md:px-[8%] px-3 py-[3rem]">
-      <div className="text-4xl font-bold text-center">What Our Clients Say</div>
+      <div className="md:text-4xl text-3xl font-bold text-center">What Our Clients Say</div>
       <div className='md:grid grid-cols-3 gap-5 mt-16'>
-            {[...new Array(3)].map(() => (
+            {[...new Array(1)].map(() => (
               <div className="bg-gray-100">
                 <div className="flex items-center justify-between bg-gray-200 px-6 py-3">
                   <img 

@@ -2,8 +2,8 @@
 
 export default function ContactForm() {
   return (
-    <div className="md:px-7">
-        <h3 className="text-4xl text-bold mb-5">Let's Get in touch</h3>
+    <div className="">
+        <h3 className="text-3xl text-bold mb-7">Let's Get in touch</h3>
         <form>
             <div className="mb-5">
                 <input 

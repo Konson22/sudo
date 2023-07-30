@@ -4,7 +4,7 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 
 export default function FooterSection() {
   return (
-    <footer className="bg-gray-700 text-gray-300">
+    <footer className="bg-darkgreen text-gray-300">
         <div className="md:flex md:px-[10%] px-5 md:pt-10 pt-5">
             <div className="flex-1">
                 <h2 className="text-3xl text-white font-bold mb-4">Sudo Agency</h2>
@@ -59,18 +59,18 @@ export default function FooterSection() {
                 </ul>
             </div>
         </div>
-        <div className="md:px-[10%] px-5 md:flex justify-between md:bg-gray-800 md:py-6">
+        <div className="md:px-[10%] px-5 md:flex justify-between md:bg-darkgreen2 md:py-6">
             <div className="flex justify-evenly md:py-0 py-6">
-                <span className="text-2xl border rounded-full p-2">
+                <span className="text-\xl border rounded-full p-2">
                     <FaTwitter />
                 </span>
-                <span className="text-2xl border rounded-full p-2 md:mx-8">
+                <span className="text-\xl border rounded-full p-2 md:mx-8">
                     <FaInstagram />
                 </span>
-                <span className="text-2xl border rounded-full p-2">
+                <span className="text-\xl border rounded-full p-2">
                     <FaFacebook />
                 </span>
-                <span className="text-2xl border rounded-full p-2 md:mx-8">
+                <span className="text-\xl border rounded-full p-2 md:mx-8">
                     <FaLinkedin />
                 </span>
             </div>
