@@ -1,31 +1,36 @@
 import { FiArrowRight } from "react-icons/fi"
 import { Link } from "react-router-dom"
+import InviewAnimate from "../../components/InviewAnimate"
 
 
 export default function ServiceSection() {
+
+
   return (
     <div className="md:px-[8%] px-5 md:py-[4rem] py-[2rem]">
         <h2 className="md:text-4xl text-2xl font-bold text-center">OUR SERVICES</h2>
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-x-5 md: gap-y-20 mt-20">
             {servicesData2.map(service => (
+              <InviewAnimate>
                 <div className="bg-gray-200 rounded-md md:p-4 p-4">
-                    <div 
-                        className="
-                            h-[9rem] w-[9rem] flex items-center justify-center rounded-full text-5xl 
-                            md:mt-[-3.5rem] mt-[-3rem] mx-auto bg-red-500 text-white border8 border-white
-                        "
-                    >
-                        <img src={service.image} alt="" />
-                    </div>
-                    <h3 className="text-xl font-semibold my-3">{service.title}</h3>
-                    <p className="line-clamp-6">{service.text}</p>
-                    <div className="mt-4 md:mb-0 mb-3">
-                        <Link className=" border border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white rounded flex items-center w-[max-content] sm:text-sm px-5 py-2" to={service.title}>
-                            Learn more
-                            <FiArrowRight className="ml-2" />
-                        </Link>
-                    </div>
+                  <div 
+                    className="
+                      h-[9rem] w-[9rem] flex items-center justify-center rounded-full text-5xl 
+                      md:mt-[-3.5rem] mt-[-3rem] mx-auto bg-red-500 text-white border8 border-white
+                    "
+                  >
+                    <img src={service.image} alt="" />
+                  </div>
+                  <h3 className="text-xl font-semibold my-3">{service.title}</h3>
+                  <p className="line-clamp-6">{service.text}</p>
+                  <div className="mt-4 md:mb-0 mb-3">
+                    <Link className=" border border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white rounded flex items-center w-[max-content] sm:text-sm px-5 py-2" to={service.title}>
+                      Learn more
+                      <FiArrowRight className="ml-2" />
+                    </Link>
+                  </div>
                 </div>
+              </InviewAnimate>
             ))}
             <div className="md:col-span-2 flex items-center md:px-7">
                 <p>

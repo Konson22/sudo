@@ -1,4 +1,5 @@
 import { FaAccusoft, FaHeart } from 'react-icons/fa'
+import InviewAnimate from '../../components/InviewAnimate'
 
 export default function OurApproachSection() {
   return (
@@ -6,25 +7,26 @@ export default function OurApproachSection() {
         <h2 className="md:text-4xl text-2xl font-bold text-center">OUR APPROACHS</h2>
         <div className="md:grid grid-cols-2 gap-x-16 mt-16">
             {data.map((d, index) => (
-                <div 
-                    className={`border-l-4 border-fuchsia-600 md:pb-0 ${index === 3 ? '':'pb-12'} md:mb-16 mb-0`}
+                <InviewAnimate key={index}
+                    hidden={{ opacity:0, x:-100 }}
+                    visible={{ opacity:1, x:0 }}
                 >
-                    <div className="flex items-center md:ml-[-2rem] ml-[-1.5rem] mt-[-1rem]">
-                        <div 
-                            className="
-                                md:h-[4rem] h-[3rem] md:w-[4rem] w-[3rem] flex items-center justify-center md:md:text-3xl text-3xl
-                                borde border-red-600 bg-gradient-to-r from-red-400 to-fuchsia-600 text-white
-                                rounded-full md:p-3 p-2 mr-3
-                            "
-                        >
-                            {d.icon}
+                    <div className='md:mb-16 mb-8'>
+                        <div className="flex items-center mb-3">
+                            <div 
+                                className="
+                                    md:md:text-3xl text-xl
+                                    borde border-red-600 bg-gradient-to-r from-red-400 to-fuchsia-600 text-white
+                                    rounded-full md:p-3 p-2 mr-3
+                                "
+                            >
+                                {d.icon}
+                            </div>
+                            <h3 className="md:text-2xl text-xl font-bold">{d.title}</h3>
                         </div>
-                        <h3 className="md:text-2xl text-xl font-bold">{d.title}</h3>
-                    </div>
-                    <div className="flex-1 md:ml-4 ml-3">
                         <p>{d.text}</p>
                     </div>
-                </div>
+                </InviewAnimate>
             ))}
         </div>
     </div>
