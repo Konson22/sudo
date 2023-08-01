@@ -1,19 +1,24 @@
+import { FiCheck } from "react-icons/fi"
 
 
 
 export default function WhyUsSection() {
   return (
-    <div className="flex bg-darkgreen md:pr-32">
-      <div className="md:block hidden w-[40%] bg-red-300">
-        <img src={process.env.PUBLIC_URL+'./images/pexels-fauxels-31831652.jpg'} alt="" />
+    <div className="why-us-container md:flex text-white md:pr-32 md:px-0 px-5 md:pt-0 pt-10">
+      <div className="why-us-sidebar md:flex items-center md:text-6xl text-3xl font-bold text-white md:w-[40%]">
+        <h2>Why Choose Us?</h2>
       </div>
-      <div className="md:flex-1 flex flex-col justify-center md:text-gray-600 text-white md:ml-[-5%] md:py-12 py-">
-        <div className="md:bg-white shadow-md rounded-xl md:px-8 py-8 px-4">
-          <h2 className="text-4xl mb-4 font-bold ">Why Choose Us?</h2>
+      <div className="md:flex-1 flex flex-col justify-center  text-white md:ml-[-5%] md:py-12 py-">
+        <div className="md:bg-gold shadow-md rounded-xl md:px-8 py-8 ">
           {data.map(d => (
-            <div className="mb-4">
-              <h4 className="text-xl ffont-semibold mb-3">{d.title}</h4>
-              <p className="">{d.text}</p>
+            <div className="flex md:items-center mb-6">
+              <div className="h-[max-content] md:text-2xl text- rounded-full border-2 border-white bg-darkblue p-2 m-">
+                <FiCheck />
+              </div>
+              <div className="flex-1 md:ml-4 ml-2">
+                <h4 className="text-xl font-semibold mb-">{d.title}</h4>
+                <p className="">{d.text}</p>
+              </div>
             </div>
           ))}
         </div>

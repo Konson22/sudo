@@ -7,36 +7,38 @@ export default function ServiceSection() {
 
 
   return (
-    <div className="md:px-[8%] px-5 md:py-[4rem] py-[2rem]">
-        <h2 className="md:text-4xl text-2xl font-bold text-center">OUR SERVICES</h2>
+    <div className="md:px-[8%] px-5 md:py-[4rem] py-[3rem] bg-darkblue text-white">
+      <div className="md:flex items-center md:mb-40 mb-20">
+        <h2 className="md:text-6xl text-3xl text-gold font-bold md:w-[40%] md:mb-0 mb-4">
+          SERVICES WE OFFER
+        </h2>
+        <p className="flex-1 text-xl">
+          we are passionate about turning your ideas into reality through cutting-edge software development services. With a team of highly skilled and experienced professionals, we strive to deliver top-notch solutions that meet your unique business needs. Whether you are a startup, a small business, or an established enterprise, our tailored services are designed to drive your success and growth.
+        </p>
+      </div>
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-x-5 md: gap-y-20 mt-20">
-            {servicesData2.map(service => (
-              <InviewAnimate>
-                <div className="bg-gray-200 rounded-md md:p-4 p-4">
-                  <div 
-                    className="
-                      h-[9rem] w-[9rem] flex items-center justify-center rounded-full text-5xl 
-                      md:mt-[-3.5rem] mt-[-3rem] mx-auto bg-red-500 text-white border8 border-white
-                    "
-                  >
-                    <img src={service.image} alt="" />
-                  </div>
-                  <h3 className="text-xl font-semibold my-3">{service.title}</h3>
-                  <p className="line-clamp-6">{service.text}</p>
-                  <div className="mt-4 md:mb-0 mb-3">
-                    <Link className=" border border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white rounded flex items-center w-[max-content] sm:text-sm px-5 py-2" to={service.title}>
-                      Learn more
-                      <FiArrowRight className="ml-2" />
-                    </Link>
-                  </div>
+          {servicesData2.map(service => (
+            <InviewAnimate>
+              <div className="md:bg-gold bg-gold/60 rounded-md md:p-4 p-4">
+                <div 
+                  className="
+                    h-[8rem] w-[8rem] flex items-center justify-center rounded-full text-5xl 
+                    md:mt-[-3.5rem] mt-[-3rem] mx-auto bg-red-500 border8 border-white
+                  "
+                >
+                  <img src={service.image} alt="" />
                 </div>
-              </InviewAnimate>
-            ))}
-            <div className="md:col-span-2 flex items-center md:px-7">
-                <p>
-                    we are passionate about turning your ideas into reality through cutting-edge software development services. With a team of highly skilled and experienced professionals, we strive to deliver top-notch solutions that meet your unique business needs. Whether you are a startup, a small business, or an established enterprise, our tailored services are designed to drive your success and growth.
-                </p>
-            </div>
+                <h3 className="text-xl text-darkblue font-bold my-3">{service.title}</h3>
+                <p className="line-clamp-6">{service.text}</p>
+                <div className="mt-4 md:mb-0 mb-3">
+                  <Link className="bg-darkblue hover:bg-darkblue/50 hover:text-white rounded flex items-center w-[max-content] sm:text-sm px-5 py-2" to={service.title}>
+                    Learn more
+                    <FiArrowRight className="ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </InviewAnimate>
+          ))}
         </div>
     </div>
   )
@@ -79,11 +81,11 @@ const servicesData2 = [
       text:`With the world going mobile-first, having a well-designed and functional mobile app is crucial for your business success. Our mobile app development services cover iOS, Android, and cross-platform app development. We focus on intuitive user interfaces, high performance, and seamless integration with back-end systems.`,
       image:process.env.PUBLIC_URL+'./images/smartphone.png',
     },
-    {
-      title:'Enterprise Software Solutions',
-      text:`We understand the complexities of large-scale enterprises and the need for robust software solutions. Our enterprise software development services empower organizations with scalable, efficient, and secure software that streamlines operations, enhances productivity, and drives better decision-making.`,
-      image:process.env.PUBLIC_URL+'./images/graphic-designer.png',
-    },
+    // {
+    //   title:'Enterprise Software Solutions',
+    //   text:`We understand the complexities of large-scale enterprises and the need for robust software solutions. Our enterprise software development services empower organizations with scalable, efficient, and secure software that streamlines operations, enhances productivity, and drives better decision-making.`,
+    //   image:process.env.PUBLIC_URL+'./images/graphic-designer.png',
+    // },
     // {
     //   title:'Software Consultation and Strategy',
     //   text:`Unsure about which technologies to choose or how to tackle a complex software challenge? Our expert consultants are here to guide you. We analyze your business needs, offer strategic insights, and provide a roadmap to achieve your software development goals effectively.`,

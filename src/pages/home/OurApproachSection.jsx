@@ -5,7 +5,7 @@ export default function OurApproachSection() {
   return (
     <div className="md:px-[8%] px-6 py-[3rem]">
         <h2 className="md:text-4xl text-2xl font-bold text-center">OUR APPROACHS</h2>
-        <div className="md:grid grid-cols-2 gap-x-16 mt-16">
+        <div className="md:grid grid-cols-2 gap-x-16 md:mt-16 mt-8">
             {data.map((d, index) => (
                 <InviewAnimate key={index}
                     hidden={{ opacity:0, x:-100 }}
@@ -15,14 +15,14 @@ export default function OurApproachSection() {
                         <div className="flex items-center mb-3">
                             <div 
                                 className="
-                                    md:md:text-3xl text-xl
-                                    borde border-red-600 bg-gradient-to-r from-red-400 to-fuchsia-600 text-white
+                                    md:md:text-3xl text-2xl
+                                    bg-darkblue text-white md:border-4 border-2 border-gold
                                     rounded-full md:p-3 p-2 mr-3
                                 "
                             >
                                 {d.icon}
                             </div>
-                            <h3 className="md:text-2xl text-xl font-bold">{d.title}</h3>
+                            <h3 className="md:text-2xl text-xl text-darkblue font-bold">{d.title}</h3>
                         </div>
                         <p>{d.text}</p>
                     </div>
