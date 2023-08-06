@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body{
+  scroll-behavior: smooth;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.why-us-container{
+  background-color: gray;
+}
+
+.why-us-sidebar{
+  background-image: url('./assets/images/pexels-fauxels-31831652.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width:785px) {
+  .why-us-container{
+    background-image: linear-gradient(rgba(48, 47, 78, .6), rgba(48, 47, 78, .6)), url('./assets/images/pexels-elvis-25281182.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+  }
+  .why-us-sidebar{
+    background-image: none;
+  }
+}

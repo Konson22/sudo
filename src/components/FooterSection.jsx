@@ -16,16 +16,22 @@ export default function FooterSection() {
                 <h3 className="text-xl text-white font-bold mb-3">Services</h3>
                 <ul>
                     <li className="my-3">
-                    Support our work
+                        Web Application Development
                     </li>
                     <li className="my-3">
-                    Become a member
+                        Mobile Apps Developement
                     </li>
                     <li className="my-3">
-                    Volunteer with us
+                        Search Engine Optimization (SEO)
                     </li>
                     <li className="my-3">
-                    Support our work
+                        UI/UX Design
+                    </li>
+                    <li className="my-3">
+                        Maintenance and Support
+                    </li>
+                    <li className="my-3">
+                        Digital Marketing
                     </li>
                 </ul>
             </div>

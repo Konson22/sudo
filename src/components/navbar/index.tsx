@@ -111,7 +111,7 @@ const MobileNav = ({ isOpen, setIsOpen }:mobileNavProps) => {
               exit='axit'
               transition={{ duration:.2, delay:.1+index/20 }}
             >
-              <NavLink className='block px-4 md:py-5 py-3' to={link.path}>
+              <NavLink className='block px-4 md:py-5 py-3' to={link.path} onClick={() => setIsOpen(false)}>
                 {link.text}
               </NavLink>
             </motion.div>

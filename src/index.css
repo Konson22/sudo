@@ -11,23 +11,38 @@ img{
   height: 100%;
 }
 
-.why-us-container{
-  background-color: gray;
+.contact-container{
+  background-image: 
+    linear-gradient(rgba(55, 53, 99,.6), rgba(55, 53, 99,.6)),
+    url('./assets/images/money-gcbbbadce1_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.why-us-sidebar{
-  background-image: url('./assets/images/pexels-fauxels-31831652.jpg');
+.image-bg{
+  background-image: 
+  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('./assets/images/pexels-elvis-25281182.jpg');
   background-size: cover;
+  background-position: center;
+}
+
+.wave{
+  background-image: url('./assets/images/bg.svg');
+  background-size: cover;
+  color: rgb(55, 53, 99);
 }
 
 @media screen and (max-width:785px) {
-  .why-us-container{
-    background-image: linear-gradient(rgba(48, 47, 78, .6), rgba(48, 47, 78, .6)), url('./assets/images/pexels-elvis-25281182.jpg');
+  .image-bg{
+    background-image: none;
+  }
+  .image-bg2{
+    background-image: 
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+      url('./assets/images/pexels-elvis-25281182.jpg');
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
-  }
-  .why-us-sidebar{
-    background-image: none;
   }
 }

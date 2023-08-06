@@ -11,6 +11,9 @@ module.exports = {
         mydark3:'rgb(50, 50, 50)',
         gold:'rgb(181, 140, 48)',
         darkblue:'rgb(48, 47, 78)',
+        lightblue:'rgb(55, 53, 99)',
+        green1:'rgb(70, 117, 104)',
+        green2:'rgb(23, 167, 100)',
       }
     },
   },
