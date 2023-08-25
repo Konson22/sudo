@@ -105,7 +105,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
                 offset={-50}
                 duration={800} 
                 className='py-5' 
-                activeClass='px-4 md:py-5 py-3'
+                activeClass=''
+                onClick={() => setIsOpen(false)}
               >
                 {link.text}
               </Link> 
