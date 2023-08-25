@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { navigationsLinksData } from "../../assets/staticData";
 import { FiX } from "react-icons/fi";
@@ -27,20 +26,6 @@ const variants = {
   }
 }
 
-const variants2 = {
-  initial:{
-    y:'-100%',
-    opacity:0
-  },
-  animate:{
-    y:0,
-    opacity:1
-  },
-  exit:{
-    y:'-100%',
-    opacity:0,
-  }
-}
 
 
 export default function Navbar() {
@@ -62,16 +47,16 @@ export default function Navbar() {
         <ul className="md:flex">
           {navigationsLinksData.map(link => (
             <div className="block cursor-pointer px-4 md:py-5 py-3">
-                <Link 
-                    to={link.path}
-                    spy={true} 
-                    smooth={true} 
-                    offset={-50}
-                    duration={800} 
-                    className='py-5' 
-                    activeClass='border-b-2 border-red-500'
-                >
-                    {link.text}
+              <Link 
+                to={link.path}
+                spy={true} 
+                smooth={true} 
+                offset={-50}
+                duration={800} 
+                className='py-5' 
+                activeClass='border-b-2 border-red-500'
+              >
+                {link.text}
             </Link> 
             </div>
           ))}
@@ -112,18 +97,19 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         </div>
         <ul className="md:flex">
           {navigationsLinksData.map((link, index) => (
-            <motion.div
-              key={index}
-              variants={variants2}
-              animate={isOpen ? 'animate' : ''}
-              initial='initial'
-              exit='axit'
-              transition={{ duration:.2, delay:.1+index/20 }}
-            >
-              <NavLink className='block px-4 md:py-5 py-3' to={link.path} onClick={() => setIsOpen(false)}>
+            <div className='block px-4 md:py-5 py-3' onClick={() => setIsOpen(false)}>
+              <Link 
+                to={link.path}
+                spy={true} 
+                smooth={true} 
+                offset={-50}
+                duration={800} 
+                className='py-5' 
+                activeClass='px-4 md:py-5 py-3'
+              >
                 {link.text}
-              </NavLink>
-            </motion.div>
+              </Link> 
+            </div>
           ))}
         </ul>
         </motion.div>
