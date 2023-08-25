@@ -6,14 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        darkgreen:'rgb(41, 126, 133)',
-        darkgreen2:'rgb(4, 84, 91)',
-        mydark3:'rgb(50, 50, 50)',
-        gold:'rgb(181, 140, 48)',
-        darkblue:'rgb(48, 47, 78)',
-        lightblue:'rgb(55, 53, 99)',
-        green1:'rgb(70, 117, 104)',
-        green2:'rgb(23, 167, 100)',
+        gold:'rgb(165, 140, 71)',
+        gold2:'rgb(190, 161, 79)',
+        darkblue:'rgb(30, 56, 91)',
+        darkgray:'rgb(208, 209, 193)',
+        lightgray:'rgb(221, 221, 209)',
       }
     },
   },

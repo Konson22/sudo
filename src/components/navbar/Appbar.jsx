@@ -4,22 +4,22 @@ import { navigationsLinksData } from "../../assets/staticData";
 import { FiX } from "react-icons/fi";
 import { useState } from "react";
 import { AnimatePresence, motion } from 'framer-motion';
-
+import { Link } from "react-scroll";
 
 const variants = {
-  initial:(state:boolean) => {
+  initial:(state) => {
     return{
       x:state ? 0 : '-100%',
       opacity:0
     }
   },
-  animate:(state:boolean) => {
+  animate:(state) => {
     return{
       x:state ? 0 :'-100%',
       opacity:1
     }
   },
-  exit:(state:boolean) => {
+  exit:(state) => {
     return{
       x:'-100%',
       opacity:0
@@ -52,7 +52,7 @@ export default function Navbar() {
     <nav 
       className="
         flex items-center justify-between bg-darkblue text-white md:px-[8%] px-3 md:py-0 py-3
-        w-full sticky left-0 top-0 z-40
+        w-full sticky left-0 top-0 z-40 border-b-4 border-gold
       "
     >
       <div className="text-3xl">
@@ -61,7 +61,19 @@ export default function Navbar() {
       <div className='md:flex hidden md:static fixed inset-0 md:bg-transparent bg-darkblue z-50'>
         <ul className="md:flex">
           {navigationsLinksData.map(link => (
-            <NavLink className='block px-4 md:py-5 py-3' to={link.path}>{link.text}</NavLink>
+            <div className="block cursor-pointer px-4 md:py-5 py-3">
+                <Link 
+                    to={link.path}
+                    spy={true} 
+                    smooth={true} 
+                    offset={-50}
+                    duration={800} 
+                    className='py-5' 
+                    activeClass='border-b-2 border-red-500'
+                >
+                    {link.text}
+            </Link> 
+            </div>
           ))}
         </ul>
       </div>
@@ -70,18 +82,15 @@ export default function Navbar() {
         <span className="md:hidden block text-xl" onClick={() => setIsOpen(!isOpen)}>
           <FaBars />
         </span>
-        <button className="md:block hidden bg-white text-red-700 rounded px-5 py-2">Get Quotation</button>
+        <button className="md:block hidden bg-gold rounded px-5 py-2">Get Quotation</button>
       </div>
     </nav>
   )
 }
 
-interface mobileNavProps {
-  isOpen:boolean,
-  setIsOpen:React.Dispatch<React.SetStateAction<boolean>>
-}
 
-const MobileNav = ({ isOpen, setIsOpen }:mobileNavProps) => {
+
+const MobileNav = ({ isOpen, setIsOpen }) => {
   return(
     <AnimatePresence initial={false} custom={isOpen}>
       <motion.div 

@@ -14,7 +14,7 @@ function App() {
 
   
   return (
-    <div className="md:text-base text-sm">
+    <div className="md:text-base text-gray-600 text-sm">
       <ScrollToTop />
       <Navbar />
       <Routes>
