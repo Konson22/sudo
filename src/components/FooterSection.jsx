@@ -65,7 +65,7 @@ export default function FooterSection() {
                 </ul>
             </div>
         </div>
-        <div className="md:px-[10%] px-5 md:flex items-center justify-between md:bg-darkblue/20 md:py-6">
+        <div className="md:px-[10%] px-5 md:flex items-center justify-between md:bg-darkblue/20 md:py-6 border-t">
             <div className="flex justify-evenly md:py-0 py-6">
                 <span className="text-\xl border-2 text-gold border-gold rounded-full p-2">
                     <FaTwitter />

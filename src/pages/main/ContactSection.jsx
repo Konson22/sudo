@@ -4,7 +4,7 @@ import { Element } from 'react-scroll'
 export default function ContactSection() {
   return (
     <Element id='contact' name='contact'>
-        <div className="image-bg md:flex items-centerr bg-white shadow-md rounded md:px-6 px-4 py-8 md:mx-[8%] mx-3 my-[4rem]">
+        <div className="image-bg md:flex items-centerr md:bg-white bg-gold shadow-md rounded md:px-6 px-4 py-8 md:mx-[8%] mx-3 my-[4rem]">
             <div className="flex-1 md:p-9">
                 <h2 className="text-4xl font-bold">Let's Get In Touch</h2>
                 <p>
