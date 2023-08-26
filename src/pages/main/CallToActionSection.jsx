@@ -1,3 +1,4 @@
+import AnimateTitle from "../../components/AnimateTitle";
 
 
 export default function CallToActionSection() {
@@ -13,7 +14,12 @@ export default function CallToActionSection() {
         }}
     >
         <div className="md:w-[50%] text-white">
-            <h2 className="md:text-5xl text-3xl font-bold mb-4">Let's Innovate Together!</h2>
+            <AnimateTitle
+                cName="md:text-5xl text-3xl font-bold text-center text-white mb-3" 
+                text={`Let's Innovate Together!`} 
+                bg='bg-gold'
+            />
+           
             <p className="md:text-xl">
                 If you're looking for a reliable and proficient software development company to bring your ideas to life, Sudo Agency is the right choice for you. We believe in fostering long-term relationships with our clients by delivering exceptional results and excellent customer service.
             </p>

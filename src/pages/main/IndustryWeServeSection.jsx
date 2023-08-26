@@ -1,5 +1,6 @@
 import { FiCheck } from "react-icons/fi"
 import { motion } from 'framer-motion'
+import AnimateTitle from "../../components/AnimateTitle"
 
 
 export default function IndustryWeServeSection() {
@@ -30,7 +31,12 @@ export default function IndustryWeServeSection() {
                 variants={textAnimate}
                 viewport={{ once:true, amount:.3 }}
             >
-                <h2 className="md:text-5xl text-3xl font-bold text-gold mb-4">Industries We Serve</h2>
+                <AnimateTitle 
+                    cName="md:text-5xl text-3xl font-bold text-center text-gold" 
+                    text='Industries We Serve' 
+                    bg='bg-white'
+                />
+                {/* <h2 className="md:text-5xl text-3xl font-bold text-gold mb-4">Industries We Serve</h2> */}
                 <h2 className="md:text-xl font-boldd">Our expertise spans across various industries, including but not limited to:</h2>
                 <motion.div 
                     className="grid grid-cols-2 gap-4 mt-7"

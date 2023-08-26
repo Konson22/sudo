@@ -21,16 +21,34 @@ img{
   color: hsl(226, 49%, 41%);
 }
 
-.image-bg{
-  background-image: url('./assets/images/bg.svg');
+.curve-blue{
+  background-image: url('./assets/images/curve-blue.svg');
   background-size: cover;
+}
+.curve-gold{
+  background-image: url('./assets/images/curve-gold.svg');
+  background-size: cover;
+}
+.contact{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/pexels-elvis-25281182.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .wave-bg{
   background-image: url('./assets/images/wave.svg');
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 
 @media screen and (max-width:785px) {
-  
+  .curve-blue{
+    background-image: url('./assets/images/curve-gold.svg');
+    background-size: cover;
+  }
+  .curve-gold{
+    background-image: url('./assets/images/curve-blue.svg');
+    background-size: cover;
+  }
 }

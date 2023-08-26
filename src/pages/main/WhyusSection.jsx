@@ -1,13 +1,16 @@
+import AnimateTitle from "../../components/AnimateTitle"
 
 
 export default function WhyusSection() {
   return (
-    <div className="md:px-[8%] bg-whitee px-6 md:py-[4rem] py-[1rem] flex">
+    <div className="md:px-[8%] px-6 md:py-[4rem] py-[1rem] flex">
       <div className="flex-1">
-        <div className="flex items-center mb-14">
-          <h2 className="md:text-5xl text-2xl font-bold text-darkblue mr-5">WHY CHOOSE US</h2>
-          <div className="md:h-2 h-1 bg-gold to-darkgray flex-1"></div>
-        </div>
+        <AnimateTitle 
+          cName="md:text-5xl text-3xl font-bold text-center text-darkblue" 
+          text='WHY CHOOSE US' 
+          bg='bg-gold'
+        />
+      
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:mt-7 mt-4">
           {data.map(d => (
             <div className="bg-white p-6">

@@ -7,25 +7,28 @@ export default function ServiceSection() {
   return (
     <Element id='services' name='services'>
       <div className="md:px-[8%] px-6 md:py-[4rem] py-[2rem]">
-        <AnimateTitle cName="md:text-5xl text-3xl font-bold text-center text-gold" text='OUR SERVICES' />
+        <AnimateTitle 
+          cName="md:text-5xl text-3xl font-bold text-center text-darkblue" 
+          text='OUR SERVICES' 
+          bg='bg-gold'
+        />
         <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mt-10">
           {data.map((service, index) => (
             <WhileInView key={index}>
-              <div className={`
-                rounded-md pt-5 bg-white shadow-md 
-              `}>
+              <div className='wave-bg rounded-md pt-5 bg-white shadow-md '>
                 <div className="flex flex-1 items-center">
-                  <div className="h-[3.5rem] w-[3.5rem] mx-3 mb-2">
+                  <div className="h-[4rem] w-[4rem] mx-3 mb-2">
                     <img src={service.image} alt="" />
                   </div>
-                  <div 
+                  {/* <div 
                     className='
                       flex-1 px-4 py-2 rounded-l-2xl overflow-hidden md:border-y-4 md:border-l-4 border-y-2 border-l-2
                       border-darkgray bg-gold
                     '
                   >
                     <h3 className={`text-white md:text-xl text-[1rem] ffont-semibold`}>{service.title}</h3>
-                  </div>
+                  </div> */}
+                    <h3 className={`text-darkblue md:text-2xl text-[1rem] font-semibold`}>{service.title}</h3>
                 </div>
                 <div className="p-3">
                   <p className="line-clamp-4">{service.text}</p>
