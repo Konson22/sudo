@@ -1,12 +1,7 @@
 import { FaDollarSign } from "react-icons/fa"
 
-export const navigationsLinksData = [
-    {text:'HOME', path:'home', offset:0},
-    {text:'SERVICES', path:'services', offset:200},
-    // {text:'PRICING', path:'pricing'},
-    {text:'ABOUT', path:'about', offset:-100},
-    {text:'CONTACT US', path:'contact', offset:-100},
-]
+
+
 
 export const webDesignService = {
     header:`A well-designed website is crucial for making a strong first impression and engaging your visitors. Our web design services focus on creating intuitive, responsive, and aesthetically pleasing websites that represent your brand's essence. Whether you need a simple informational site, an e-commerce platform, or a complex web application, we've got you covered.`,
@@ -104,3 +99,57 @@ export const whyChooseUseData = [
         icon:<FaDollarSign />
     },
 ]
+
+export const services = [
+    {
+        title:'Social media advertisment',
+        text:''
+    },
+    {
+        title:'App development',
+        text:''
+    },
+    {
+        title:'Web developement',
+        text:''
+    },
+    {
+        title:'SEO optimization',
+        text:''
+    },
+]
+
+export const navigationsLinksData = [
+    { text: "Home", path: "/" },
+    { text: "Services", path: "/", sublinks: services },
+    { text: "About", path: "/" },
+    { text: "Contacts", path: "/" },
+];
+
+export const faqData = [
+    {
+        question:'What is socila media ads',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+    {
+        question:'How to get started',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+    {
+        question:'How much does it cost',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+    {
+        question:'What is socila media ads',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+    {
+        question:'How to get started',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+    {
+        question:'How much does it cost',
+        text:'At Sudo Agency, we believe in the power of innovation and design to transform businesses and create exceptional digital experiences. Our dedicated team of skilled designers, developers, and creatives work collaboratively to turn your ideas into reality and help you achieve your goals.',
+    },
+]
+  

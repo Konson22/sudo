@@ -39,25 +39,25 @@ export default function FooterSection() {
                 <h3 className="text-xl text-white font-bold mb-2">Contacts</h3>
                 <ul>
                     <li className="flex items-center my-3">
-                    <span className="h-8 w-8 flex items-center justify-center border rounded-full mr-2">
+                    <span className="h-8 w-8 flex items-center justify-center border text-gold border-gold rounded-full mr-2">
                         <FaMapMarkerAlt />
                     </span>
                     Stem center next to SSBC
                     </li>
                     <li className="flex items-center my-3">
-                    <span className="h-8 w-8 flex items-center justify-center border rounded-full mr-2">
+                    <span className="h-8 w-8 flex items-center justify-center border text-gold border-gold rounded-full mr-2">
                         <FiPhoneCall />
                     </span>
                     +211920079070
                     </li>
                     <li className="flex items-center my-3">
-                    <span className="h-8 w-8 flex items-center justify-center border rounded-full mr-2">
+                    <span className="h-8 w-8 flex items-center justify-center border text-gold border-gold rounded-full mr-2">
                         <FaWhatsapp />
                     </span>
                     +211920079070
                     </li>
                     <li className="flex items-center my-3">
-                    <span className="h-8 w-8 flex items-center justify-center border rounded-full mr-2">
+                    <span className="h-8 w-8 flex items-center justify-center border text-gold border-gold rounded-full mr-2">
                         <FiMail />
                     </span>
                     +211920079070
@@ -65,18 +65,18 @@ export default function FooterSection() {
                 </ul>
             </div>
         </div>
-        <div className="md:px-[10%] px-5 md:flex justify-between md:bg-darkblue/20 md:py-6">
+        <div className="md:px-[10%] px-5 md:flex items-center justify-between md:bg-darkblue/20 md:py-6 border-t">
             <div className="flex justify-evenly md:py-0 py-6">
-                <span className="text-\xl border rounded-full p-2">
+                <span className="text-\xl border-2 text-gold border-gold rounded-full p-2">
                     <FaTwitter />
                 </span>
-                <span className="text-\xl border rounded-full p-2 md:mx-8">
+                <span className="text-\xl border-2 text-gold border-gold rounded-full p-2 md:mx-8">
                     <FaInstagram />
                 </span>
-                <span className="text-\xl border rounded-full p-2">
+                <span className="text-\xl border-2 text-gold border-gold rounded-full p-2">
                     <FaFacebook />
                 </span>
-                <span className="text-\xl border rounded-full p-2 md:mx-8">
+                <span className="text-\xl border-2 text-gold border-gold rounded-full p-2 md:mx-8">
                     <FaLinkedin />
                 </span>
             </div>

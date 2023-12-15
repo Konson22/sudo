@@ -19,8 +19,8 @@ export default function InviewAnimate({ children, visible={ opacity:1, y:0 }, hi
     <div ref={ref}>
         <motion.div
             variants={{
-              hidden:hidden,
-              visible:visible
+                hidden:hidden,
+                visible:visible
             }}
             initial='hidden'
             animate={mainControlls}

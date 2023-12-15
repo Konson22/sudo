@@ -1,14 +1,11 @@
 import { FaDollarSign } from "react-icons/fa"
 
 export const navigationsLinksData = [
-    {text:'HOME', path:'/'},
-    {text:'SERVICES', path:'/services', subLinks:[
-        {text:'About us', path:'/about'},
-    ]},
-    {text:'PRICING', path:'/about'},
-    {text:'ABOUT', path:'/children'},
-    {text:'CONTACT US', path:'/children'},
-    {text:'GIVE GIFT', path:'/'},
+    {text:'HOME', path:'home', offset:0},
+    {text:'SERVICES', path:'services', offset:200},
+    // {text:'PRICING', path:'pricing'},
+    {text:'ABOUT', path:'about', offset:-100},
+    {text:'CONTACT US', path:'contact', offset:-100},
 ]
 
 export const webDesignService = {

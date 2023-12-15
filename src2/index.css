@@ -17,32 +17,38 @@ img{
     url('./assets/images/money-gcbbbadce1_1280.jpg');
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
+  color: hsl(44, 40%, 46%);
+  color: hsl(226, 49%, 41%);
 }
 
-.image-bg{
-  background-image: 
-  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-    url('./assets/images/pexels-elvis-25281182.jpg');
+.curve-blue{
+  background-image: url('./assets/images/curve-blue.svg');
+  background-size: cover;
+}
+.curve-gold{
+  background-image: url('./assets/images/curve-gold.svg');
+  background-size: cover;
+}
+.contact{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/pexels-elvis-25281182.jpg');
   background-size: cover;
   background-position: center;
 }
-
-.wave{
-  background-image: url('./assets/images/bg.svg');
-  background-size: cover;
-  color: rgb(55, 53, 99);
+.wave-bg{
+  background-image: url('./assets/images/wave.svg');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
+
 @media screen and (max-width:785px) {
-  .image-bg{
-    background-image: none;
-  }
-  .image-bg2{
-    background-image: 
-    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-      url('./assets/images/pexels-elvis-25281182.jpg');
+  .curve-blue{
+    background-image: url('./assets/images/curve-gold.svg');
     background-size: cover;
-    background-position: center;
+  }
+  .curve-gold{
+    background-image: url('./assets/images/curve-blue.svg');
+    background-size: cover;
   }
 }

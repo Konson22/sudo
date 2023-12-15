@@ -52,7 +52,7 @@ export default function Navbar() {
     <nav 
       className="
         flex items-center justify-between bg-darkblue text-white md:px-[8%] px-3 md:py-0 py-3
-        w-full sticky left-0 top-0 z-40
+        w-full sticky left-0 top-0 z-40 border-b-4 border-gold
       "
     >
       <div className="text-3xl">
@@ -70,7 +70,7 @@ export default function Navbar() {
         <span className="md:hidden block text-xl" onClick={() => setIsOpen(!isOpen)}>
           <FaBars />
         </span>
-        <button className="md:block hidden bg-white text-red-700 rounded px-5 py-2">Get Quotation</button>
+        <button className="md:block hidden bg-gold rounded px-5 py-2">Get Quotation</button>
       </div>
     </nav>
   )
